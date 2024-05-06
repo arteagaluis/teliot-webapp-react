@@ -1,0 +1,14 @@
+@use '../../styles/util/' as u;
+
+
+.breackpoint{
+    color: red
+}
+
+@include u.breackpoint-up('small'){
+    .breackpoint{
+        color: green
+    }
+
+}
+
