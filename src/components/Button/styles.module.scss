@@ -1,0 +1,24 @@
+.button {
+    width: 300px;
+    height: 50px;
+    border: unset;
+    background-color: rgba(108, 99, 255, 1);
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    color: rgba(252, 252, 252, 1);
+    cursor: pointer; /* Agregamos cursor tipo puntero */
+    box-shadow: 0 9px #999;
+    
+  }
+
+  .button:hover {background-color: rgba(108, 99, 255, 1)}
+  
+  .button:active {
+   background-color: rgba(108, 99, 255, 1);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  }
+
+
+  
