@@ -18,15 +18,26 @@
     border-radius: 10px;
     padding: 0px 0px 0px 22px;
     font-family: Arial, Helvetica, sans-serif;
-    
+    color: rgba(0, 0, 0, 0.5);
     &::placeholder {
     font-size: 14px;
+  
       color: rgba(0, 0, 0, 0.5);
     }
     &:focus{
         outline:none;
     }
   }
+
+  .input_email[type=number]::-webkit-inner-spin-button, 
+  .input_email[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+  }
+  
+  .input_email[type=number] { -moz-appearance:textfield; }
+
+
   .icon{
     position: relative;
     right: 50px;
