@@ -29,14 +29,14 @@ const Register = () => {
               value={form.email}
             />
 
-            <Input
+            {/* <Input
               name={'num'}
               placeholder={'Numero celular'}
               onChange={handleChange}
               type={'number'}
               icon={'img/icon/phone-icon.svg'}
               value={form.num}
-            />
+            /> */}
 
             <Input
               name={'password'}

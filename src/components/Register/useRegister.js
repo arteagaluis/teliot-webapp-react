@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { servicioRegitroUsuarios } from './service.js';
 
 export const useRegister = () => {
   const [form, setForm] = useState({
@@ -7,6 +8,15 @@ export const useRegister = () => {
     num: '',
     password: '',
   });
+
+  const register = async () => {
+    try {
+      const data = await servicioRegitroUsuarios(form);
+      console.log(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   const handleChange = (e) => {
     setForm((prevState) => ({
@@ -17,6 +27,7 @@ export const useRegister = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    register();
     console.log('submit');
   };
 
