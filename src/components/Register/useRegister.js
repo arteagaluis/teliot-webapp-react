@@ -5,7 +5,6 @@ export const useRegister = () => {
   const [form, setForm] = useState({
     fullName: '',
     email: '',
-    num: '',
     password: '',
   });
 
@@ -14,6 +13,11 @@ export const useRegister = () => {
       const data = await servicioRegitroUsuarios(form);
       console.log(data);
     } catch (error) {
+      setForm({
+        fullName: '',
+        email: '',
+        password: '',
+      });
       console.log(error);
     }
   };

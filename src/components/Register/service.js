@@ -3,6 +3,7 @@ import fecthService from '@/util/FecthService.js';
 export const servicioRegitroUsuarios = async (datos) => {
   try {
     const data = await fecthService({
+      // url: 'http://backend:3001/api/register',
       url: 'http://localhost:4000/api/register',
       method: 'POST',
       data: {

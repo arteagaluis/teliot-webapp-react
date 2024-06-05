@@ -36,7 +36,9 @@ const Login = () => {
             }}
           />
 
-          <Button name={'Enviar'} type={'submit'} />
+          <div className={styles.container_btn}>
+            <Button name={'Enviar'} type={'submit'} />
+          </div>
         </div>
       </form>
     </>

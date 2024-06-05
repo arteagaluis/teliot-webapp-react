@@ -1,4 +1,9 @@
-.container{
-    color:red;
-}
+@use '../styles/util/' as u;
 
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(252, 252, 252);
+}

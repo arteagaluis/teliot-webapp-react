@@ -1,0 +1,39 @@
+@use '../../../styles/util/' as u;
+
+.container {
+  width: 100%;
+  height: 100vh;
+  //   background-color: rgba(252, 252, 252, 1);
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_log_reg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 700px;
+  width: 360px;
+  border-radius: 50px;
+  background-color: #fff;
+  -webkit-box-shadow: 10px 11px 17px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 11px 17px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 11px 17px -6px rgba(0, 0, 0, 0.75);
+}
+
+// @include u.breackpoint-up('small') {
+//   .container {
+//     background-color: #fff;
+//     align-items: center;
+//   }
+
+//   .container_log_reg {
+//     width: 500px;
+//     height: auto;
+//     background-color: rgba(252, 252, 252, 1);
+//   }
+// }

@@ -20,7 +20,7 @@ const Input = ({
   return (
     <div className={`${styles.container} ${className}`}>
       <input
-        className={styles.input_email}
+        className={styles.input}
         type={type}
         required={required}
         placeholder={placeholder}
