@@ -4,7 +4,7 @@ export const servicioRegitroUsuarios = async (datos) => {
   try {
     const data = await fecthService({
       // url: 'http://backend:3001/api/register',
-      url: 'http://localhost:4000/api/register',
+      url: 'http://http://18.231.243.156/4000/api/register',
       method: 'POST',
       data: {
         email: datos.email,
