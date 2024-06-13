@@ -18,7 +18,6 @@ export const useRegister = () => {
         email: '',
         password: '',
       });
-      console.log(error);
     }
   };
 

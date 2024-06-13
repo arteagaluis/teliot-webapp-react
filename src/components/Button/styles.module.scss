@@ -1,25 +1,25 @@
-.button {
-    width: 100%;
-    max-width: 300px;
-    height: 50px;
-    border: unset;
-    background-color: rgba(108, 99, 255, 1);
-    font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-radius: 10px;
-    color: rgba(252, 252, 252, 1);
-    cursor: pointer; /* Agregamos cursor tipo puntero */
-    box-shadow: 0 9px #999;
-    
-  }
+@use '../../styles/globals/' as g;
 
-  .button:hover {background-color: rgba(108, 99, 255, 1)}
-  
-  .button:active {
-   background-color: rgba(108, 99, 255, 1);
+.button {
+  width: 100%;
+  max-width: 276px;
+  height: 50px;
+  border: unset;
+  background-color: g.$base-color;
+  font-size: 18px;
+  font-family: g.$font-primary;
+  border-radius: 15px;
+  color: rgba(252, 252, 252, 1);
+  cursor: pointer; /* Agregamos cursor tipo puntero */
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {
+  background-color: g.$base-color;
+}
+
+.button:active {
+  background-color: g.$base-color;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
-  }
-
-
-  
+}

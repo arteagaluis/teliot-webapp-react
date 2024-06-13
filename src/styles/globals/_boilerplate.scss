@@ -1,20 +1,22 @@
-html{
-    box-sizing: border-box;
-    font-family: sans-serif;
-    font-size: 100%;
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 100%;
 }
 
 body {
-    box-sizing: inherit;
-    width: 100%;
-    min-height: 100vh;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+  box-sizing: inherit;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  margin: unset;
 }
 
-*,*::after,*::before{
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
-

@@ -1,6 +1,7 @@
 'use client';
 import PropTypes from 'prop-types';
 import styles from './styles.module.scss';
+import Image from 'next/image';
 
 const Input = ({
   className = '',
@@ -34,9 +35,13 @@ const Input = ({
         name={name}
       />
       {icon && (
-        <svg className={styles.icon} width="32" height="32">
-          <image href={icon} width="100%" height="100%" />
-        </svg>
+        // <svg className={styles.icon} width="32" height="32">
+        //   <image href={icon} width="100%" height="100%" />
+        // </svg>
+
+        <div className={styles.icon}>
+          <Image src={icon} alt="Picture of the author" />
+        </div>
       )}
     </div>
   );

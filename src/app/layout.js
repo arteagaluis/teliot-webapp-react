@@ -1,6 +1,5 @@
 import { Inter } from 'next/font/google';
-// import '../styles/index.scss';
-import styles from './styles.module.scss';
+import '../styles/index.scss';
 import ToggleSwitch from '@/components/ToggleSwitch';
 
 const inter = Inter({ subsets: ['latin'] });
