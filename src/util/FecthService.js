@@ -15,8 +15,9 @@ const fecthService = async ({
       headers,
       params,
     });
+    const { status, data: dataSrv } = response;
 
-    return response.data;
+    return { status, dataSrv };
   } catch (error) {
     console.error('Error making request:', error);
     // Manejo de errores
