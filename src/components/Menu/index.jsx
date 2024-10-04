@@ -1,27 +1,46 @@
 'use client';
 import Image from 'next/image';
 import { useState } from 'react';
-import homeIcon from '../../../public/img/icon/home-icon.svg';
-import homeIconBlue from '../../../public/img/icon/home-icon-blue.svg';
 import Link from 'next/link';
+import styles from './styles.module.scss';
 
 const Menu = () => {
-  const [select, setSelect] = useState(false);
-
   return (
-    <>
-      <nav>
-        <Link href={'/dashboard/home'}>
+    <nav className={styles.container}>
+      <Link href={'/dashboard/notification'}>
+        <div className={styles.container__icon}>
           <Image
-            src={select ? homeIconBlue : homeIcon}
+            src={'/img/icon/icon-notification.svg'}
             width={24}
             height={24}
             alt="icon-home"
           />
-          Home
-        </Link>
-      </nav>
-    </>
+          <span className={styles.texto}>Notificaciones</span>
+        </div>
+      </Link>
+      <Link href={'/dashboard/home'}>
+        <div className={styles.container__icon}>
+          <Image
+            src={'/img/icon/icon-home.svg'}
+            width={24}
+            height={24}
+            alt="icon-home"
+          />
+          <span className={styles.texto}>Home</span>
+        </div>
+      </Link>
+      <Link href={'/dashboard/perfil'}>
+        <div className={styles.container__icon}>
+          <Image
+            src={'/img/icon/icon-perfil.svg'}
+            width={24}
+            height={24}
+            alt="icon-home"
+          />
+          <span className={styles.texto}>Pefil</span>
+        </div>
+      </Link>
+    </nav>
   );
 };
 

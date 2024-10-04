@@ -1,4 +1,5 @@
 import Menu from '../../components/Menu/index.jsx';
+import styles from './styles.module.scss';
 export const metadata = {
   title: 'Dashboard',
   description: 'App para telemetria',
@@ -6,10 +7,9 @@ export const metadata = {
 export default function DashboardLayout({ children }) {
   return (
     <>
-      <section>
-        <Menu />
-
+      <section className={styles.container__layout}>
         {children}
+        <Menu />
       </section>
     </>
   );
