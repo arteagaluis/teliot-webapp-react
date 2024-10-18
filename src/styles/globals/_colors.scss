@@ -1,5 +1,61 @@
-$base-color: #0c87f1;
-$backgrund-input: #f1f1f1;
-$font-label: #878787;
-$background-card: #ffffff;
-$backgrund-dash: #f1f1f1;
+//colores principales
+$primary-color: #0c87f1;
+$secondary-color: #878787;
+$tertiary-color: #f1f1f1;
+
+// colores de fondo
+$background-light: #ffffff; // Fondo claro
+
+//Input
+$input-background: $tertiary-color;
+
+//button
+$button-primary-bg: $primary-color;
+
+//**********************************************************
+//**********************************************************
+
+//**********************************************************
+//**********************************************************
+
+//colores principales
+// $primary-color: #007bff; // Color principal
+// $secondary-color: #6c757d; // Color secundario
+// $tertiary-color: #ffc107; // Color terciario
+
+// colores de fondo
+// $background-light: #f8f9fa; // Fondo claro
+// $background-dark: #343a40; // Fondo oscuro
+// $background-muted: #f0f0f0; // Fondo tenue
+
+// //colores de texto
+// $text-primary: #212529; // Texto principal
+// $text-secondary: #6c757d; // Texto secundario
+// $text-light: #ffffff; // Texto claro
+// $text-muted: #adb5bd; // Texto tenue
+
+// // colores de estados
+
+// $success-color: #28a745; // Éxito
+// $error-color: #dc3545; // Error
+// $warning-color: #ffc107; // Advertencia
+// $info-color: #17a2b8; // Información
+
+// //colores de borde o sombra
+// $border-color: #dee2e6; // Borde
+// $shadow-color: rgba(0, 0, 0, 0.15); // Sombra
+
+// $button-primary-bg: $primary-color;
+// $button-secondary-bg: $secondary-color;
+// $button-tertiary-bg: $tertiary-color;
+
+// $button-success-bg: $success-color;
+// $button-error-bg: $error-color;
+// $button-warning-bg: $warning-color;
+// $button-info-bg: $info-color;
+
+//**********************************************************
+//**********************************************************
+
+//**********************************************************
+//**********************************************************

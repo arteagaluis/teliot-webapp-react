@@ -14,20 +14,24 @@
   height: 44px;
   padding: 0.5rem;
   box-sizing: border-box;
-  background-color: g.$backgrund-input;
+  background-color: g.$input-background;
   border: unset;
   border-radius: 10px;
   padding: 0px 0px 0px 22px;
   margin: 0px 0px 0px 0px;
   font-family: g.$font-primary;
-  color: g.$font-label;
+  color: g.$secondary-color;
   font-size: 15px;
   &::placeholder {
     font-size: 15px;
-    color: g.$font-label;
+    color: g.$secondary-color;
   }
   &:focus {
     outline: none;
+  }
+  &.is-invalid {
+    background-color: red;
+    border-color: gold;
   }
 }
 

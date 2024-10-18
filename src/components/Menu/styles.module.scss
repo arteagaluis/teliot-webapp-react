@@ -6,7 +6,7 @@
   justify-content: space-around;
   align-items: center;
   height: 100px;
-  background-color: g.$background-card;
+  background-color: g.$background-light;
   .container__icon {
     display: flex;
     flex-direction: column;
@@ -14,7 +14,7 @@
 
     .texto {
       text-decoration: none;
-      color: g.$font-label;
+      color: g.$secondary-color;
       font-family: g.$font-primary;
       font-size: 12px;
     }

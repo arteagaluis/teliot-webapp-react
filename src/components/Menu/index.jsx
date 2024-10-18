@@ -13,7 +13,7 @@ const Menu = () => {
             src={'/img/icon/icon-notification.svg'}
             width={24}
             height={24}
-            alt="icon-home"
+            alt="icon-notification"
           />
           <span className={styles.texto}>Notificaciones</span>
         </div>
@@ -35,7 +35,7 @@ const Menu = () => {
             src={'/img/icon/icon-perfil.svg'}
             width={24}
             height={24}
-            alt="icon-home"
+            alt="icon-perfil"
           />
           <span className={styles.texto}>Pefil</span>
         </div>
