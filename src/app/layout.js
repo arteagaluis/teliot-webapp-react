@@ -1,6 +1,6 @@
 import { Inter } from 'next/font/google';
 import '../styles/index.scss';
-import ToggleSwitch from '@/components/ToggleSwitch';
+import { UsuarioProvider } from '@/context/usuarioContext';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -11,13 +11,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        {/* <div className={styles.container}>
-          <div className={styles.container_layout}></div>
-        </div> */}
-        {children}
-      </body>
-    </html>
+    <UsuarioProvider>
+      <html lang="en">
+        <body className={inter.className}>{children}</body>
+      </html>
+    </UsuarioProvider>
   );
 }

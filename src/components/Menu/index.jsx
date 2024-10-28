@@ -1,10 +1,43 @@
 'use client';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import styles from './styles.module.scss';
+import { useRouter } from 'next/navigation';
+import fecthService from '@/util/FecthService';
 
 const Menu = () => {
+  const router = useRouter();
+
+  const servicioProfile = async () => {
+    console.log(process.env.NEXT_PUBLIC_SRV_PROFILE);
+    try {
+      const data = await fecthService({
+        url: process.env.NEXT_PUBLIC_SRV_PROFILE,
+        method: 'GET',
+        headers: { 'Content-Type': 'application/json' },
+      });
+      return data;
+    } catch (error) {
+      console.error('Error posting data:', error);
+      return Promise.reject(error);
+    }
+  };
+
+  const profile = async () => {
+    try {
+      const { status } = await servicioProfile();
+
+      console.log(status);
+    } catch (error) {
+      return router.push('/login');
+    }
+  };
+
+  useEffect(() => {
+    profile();
+  }, []);
+
   return (
     <nav className={styles.container}>
       <Link href={'/dashboard/notification'}>
