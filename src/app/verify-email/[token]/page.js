@@ -18,7 +18,6 @@ const VerifyEmail = ({ params }) => {
       }
     } catch (error) {
       const { response } = error;
-      console.log(response.status);
     }
   };
 

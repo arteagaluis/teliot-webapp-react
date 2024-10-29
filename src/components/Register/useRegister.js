@@ -11,7 +11,6 @@ export const useRegister = () => {
   const register = async () => {
     try {
       const data = await servicioRegitroUsuarios(form);
-      console.log(data);
     } catch (error) {
       setForm({
         fullName: '',
@@ -31,7 +30,6 @@ export const useRegister = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     register();
-    console.log('submit');
   };
 
   return {

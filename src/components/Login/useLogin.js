@@ -16,7 +16,6 @@ const useLogin = () => {
     try {
       const data = await servicioLoginUsuarios(form);
       const cookies = document.cookie;
-      console.log(cookies);
 
       if (data.status === 200) {
         dispatch({
@@ -43,7 +42,6 @@ const useLogin = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     login();
-    console.log('submit');
   };
 
   return {

@@ -7,7 +7,6 @@ import { useRouter } from 'next/navigation';
 const Pefil = () => {
   const router = useRouter();
   const servicioLogoutUsuarios = async () => {
-    console.log(process.env.NEXT_PUBLIC_SRV_LOGIN);
     try {
       const data = await fecthService({
         url: process.env.NEXT_PUBLIC_SRV_LOGOUT,
@@ -18,7 +17,6 @@ const Pefil = () => {
       });
       return data;
     } catch (error) {
-      console.error('Error posting data:', error);
       return Promise.reject(error);
     }
   };

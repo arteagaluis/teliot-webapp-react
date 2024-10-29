@@ -1,7 +1,6 @@
 import fecthService from '@/util/FecthService.js';
 
 export const servicioRegitroUsuarios = async (datos) => {
-  console.log(process.env.NEXT_PUBLIC_SRV_REGISTER);
   try {
     const data = await fecthService({
       url: process.env.NEXT_PUBLIC_SRV_REGISTER,
@@ -16,7 +15,6 @@ export const servicioRegitroUsuarios = async (datos) => {
     });
     return data;
   } catch (error) {
-    console.error('Error posting data:', error);
     return Promise.reject(error);
   }
 };
@@ -31,7 +29,6 @@ export const servicioVerificarEmail = async (token) => {
     });
     return data;
   } catch (error) {
-    console.error('Error posting data:', error);
     return Promise.reject(error);
   }
 };

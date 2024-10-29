@@ -10,7 +10,6 @@ const Menu = () => {
   const router = useRouter();
 
   const servicioProfile = async () => {
-    console.log(process.env.NEXT_PUBLIC_SRV_PROFILE);
     try {
       const data = await fecthService({
         url: process.env.NEXT_PUBLIC_SRV_PROFILE,
@@ -19,7 +18,6 @@ const Menu = () => {
       });
       return data;
     } catch (error) {
-      console.error('Error posting data:', error);
       return Promise.reject(error);
     }
   };
@@ -27,8 +25,6 @@ const Menu = () => {
   const profile = async () => {
     try {
       const { status } = await servicioProfile();
-
-      console.log(status);
     } catch (error) {
       return router.push('/login');
     }
