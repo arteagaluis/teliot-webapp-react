@@ -1,7 +1,7 @@
 import mqtt from 'mqtt';
 
 export function connectToBroker() {
-  const client = mqtt.connect('ws://iot-test.online:8083/mqtt'); // Reemplaza con la URL de tu broker
+  const client = mqtt.connect('wss://iot-test.online:8083/mqtt'); // Reemplaza con la URL de tu broker
 
   client.on('connect', () => {
     console.log('Conectado al broker MQTT');
