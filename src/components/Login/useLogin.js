@@ -15,14 +15,13 @@ const useLogin = () => {
   const login = async () => {
     try {
       const data = await servicioLoginUsuarios(form);
-      const cookies = document.cookie;
 
       if (data.status === 200) {
         dispatch({
-          type: ACCIONES_USUARIO.ACTUALIZAR_TOKEN,
-          payload: cookies,
+          type: ACCIONES_USUARIO.ACTUALIZAR_USUARIO,
+          payload: { correo: form.email, nombre: data.dataSrv.username },
         });
-        return router.push('/dashboard');
+        return router.push('/dashboard/home');
       }
     } catch (error) {
       setForm({
