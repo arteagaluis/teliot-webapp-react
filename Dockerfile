@@ -7,7 +7,7 @@ FROM node:18-alpine
 WORKDIR /app
 COPY --from=builder /app ./
 EXPOSE 3001
-CMD ["npm", "start"]
+CMD ["npm", "build"]
 
 
 # # Base image
